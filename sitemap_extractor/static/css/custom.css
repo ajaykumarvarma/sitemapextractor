@@ -1,0 +1,89 @@
+body {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.card {
+    border-radius: 15px; /* Rounded corners for card */
+}
+
+.card-title {
+    color: #007bff; /* Bootstrap primary color */
+}
+
+/* Custom button styling */
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+.results-container h2 {
+    color: #28a745; /* Bootstrap success color for the title */
+}
+
+.list-group-item {
+    border: 1px solid #f0f0f0; /* Light border for each item */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 5px; /* Space between items */
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa; /* Light background on hover */
+}
+.section-heading {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+
+.description-text {
+    font-family: 'Georgia', serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.list-group-item.description-text {
+    background-color: #f8f9fa;  /* A light background for list items */
+}
+
+/* Custom loader styles */
+.loader {
+    border: 6px solid #f3f3f3; /* Light grey background */
+    border-top: 6px solid #3498db; /* Blue border */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Modal title customization */
+.modal-title {
+    color: #007bff; /* Match Bootstrap primary color */
+}
+
+/* Modal body text */
+.modal-body h5 {
+    color: #333;
+}
+
+.modal-body p.text-muted {
+    font-size: 0.9em;
+}

@@ -22,13 +22,20 @@ body {
     background-color: #0056b3;
     border-color: #004085;
 }
+/* Align the form elements */
+.form-control, .btn-extract {
+    height: 38px;  /* Adjust this value as needed */
+    padding: 6px 12px;  /* Adjust padding to vertically center text */
+}
 
-/* Responsive design for small screens */
+/* Adjust for small devices */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 24px;
+    .form-control, .btn-extract {
+        width: 100%;
+        margin-bottom: 10px;  /* Add space between elements on smaller screens */
     }
 }
+
 .results-container h2 {
     color: #28a745; /* Bootstrap success color for the title */
 }
@@ -87,3 +94,37 @@ body {
 .modal-body p.text-muted {
     font-size: 0.9em;
 }
+
+/* Custom Styles for Status Badges */
+.status-badge {
+    font-size: 0.9em; /* Adjust font size for badges */
+    font-weight: normal; /* Normal font weight for readability */
+}
+
+/* Style adjustments for list items */
+.list-group-item {
+    display: flex;
+    justify-content: space-between; /* Space out URL and status */
+    align-items: center;
+}
+
+/* Link styling */
+.list-group-item a {
+    color: #007bff; /* Bootstrap primary blue */
+    text-decoration: none; /* No underline */
+}
+
+.list-group-item a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+/* Custom blue color for the reload button */
+.btn-custom-blue {
+    background-color: #007bff;  /* Bootstrap primary blue, change as needed */
+    border-color: #007bff;  /* Border color, change as needed */
+}
+
+.btn-custom-blue:hover {
+    background-color: #0056b3;  /* Darker blue on hover, change as needed */
+    border-color: #0056b3;  /* Border color on hover, change as needed */
+}
+

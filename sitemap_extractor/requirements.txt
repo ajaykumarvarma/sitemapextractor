@@ -1,3 +1,6 @@
 flask
 gunicorn
 requests
+ultimate-sitemap-parser
+time
+futures
